@@ -96,18 +96,6 @@ def main():
     
      
 
-# print("DONE")
-
-
-start_time = datetime.time(9, 15)   # Starting time
-end_time = datetime.time(15, 30)   # Ending time
-
-# Create a list of times every 5 minutes
-time_list = []
-t = datetime.datetime.combine(datetime.date.today(), start_time)
-while t.time() <= end_time:
-    time_list.append(t.time().strftime('%H:%M:%S'))
-    t += datetime.timedelta(minutes=5)
 
 
 
