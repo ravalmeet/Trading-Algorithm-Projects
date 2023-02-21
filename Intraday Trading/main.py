@@ -26,10 +26,10 @@ data = main()
 
 def update_data():
     while True:
-        # if current_time in time_list:
-        data = main()
-        if(len(data) > 0):
-            st.table(data)
+        if current_time in time_list:
+            data = main()
+            if(len(data) > 0):
+                st.table(data)
   
 
 import threading
